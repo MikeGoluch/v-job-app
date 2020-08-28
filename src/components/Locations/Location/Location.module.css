@@ -1,0 +1,7 @@
+.Location {
+  color: green;
+}
+
+.Location p {
+  display: inline-block;
+}
