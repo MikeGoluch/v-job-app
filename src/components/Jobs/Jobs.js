@@ -10,7 +10,7 @@ const jobs = (props) => {
   };
   return (
     <div>
-      {displayJobResults(props.data, undefined).map((el) => (
+      {displayJobResults(props.jobs, undefined).map((el) => (
         <Job key={el.id} job={el.job} />
       ))}
     </div>

@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.Checkboxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

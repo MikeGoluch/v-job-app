@@ -1,11 +1,12 @@
 import React from "react";
+import classes from "./Job.module.css";
 import Button from "../../UI/Button/Button";
 
 const job = (props) => {
   return (
-    <div>
+    <div className={classes.Job}>
       <p>{props.job}</p>
-      {/* <Button>Apply</Button> */}
+      <Button>Apply</Button>
     </div>
   );
 };

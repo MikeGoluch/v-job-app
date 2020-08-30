@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import data from "./utils/data/jobs-data.json";
-import Jobs from "./components/Jobs/Jobs";
-import Locations from "./components/Locations/Locations";
-import "./App.css";
+import Checkboxes from "./containers/Checkboxes/Checkboxes";
+import classes from "./App.module.css";
 
 class App extends Component {
   state = {
@@ -20,6 +19,7 @@ class App extends Component {
     }, {});
     return countOccurrences;
   };
+
   // extractUniqueValues = (array) => {
   //   let filteredArray = [];
   //   filteredArray = array.filter((element, index, arr) => {
@@ -35,12 +35,10 @@ class App extends Component {
     this.state.data.map((el) => {
       newArr.push(el["location"]);
     });
-    // const unique = this.extractUniqueValues(newArr);
     const occurrences = this.countOccurrences(newArr);
     return (
-      <div key={data.id}>
-        <Locations occurrences={occurrences} />
-        <Jobs data={this.state.data} />
+      <div>
+        <Checkboxes occurrences={occurrences} data={this.state.data} />
       </div>
     );
   }
