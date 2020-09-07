@@ -1,3 +1,17 @@
+.Container h3 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.Container h2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+
 .Checkboxes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

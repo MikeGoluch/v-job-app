@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Button.module.css";
 
-const button = (props) => {
+const Button = (props) => {
   return (
     <button className={classes.Button} onClick={props.clicked}>
       {props.children}
@@ -9,4 +9,4 @@ const button = (props) => {
   );
 };
 
-export default button;
+export default Button;

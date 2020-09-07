@@ -1,0 +1,73 @@
+.Checkbox {
+  /* display: grid; */
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 20px;
+}
+
+.Container {
+  /* display: inline-block; */
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 22px;
+  height: 22px;
+  width: 22px;
+  padding-left: 32px;
+  margin-bottom: 20px;
+  user-select: none;
+  color: #242e4c;
+  white-space: nowrap;
+}
+
+.Input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.Checkmark {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 22px;
+  width: 22px;
+  background-color: transparent;
+  border-radius: 2.35714px;
+  border: 0.785714px solid #c3cbe2;
+}
+
+.Container .Input:checked ~ .Checkmark {
+  background-color: #ffffff;
+}
+
+.Checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.Container .Input:checked ~ .Checkmark:after {
+  display: block;
+}
+
+.Container .Checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #517cfd;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.None {
+  color: #78819a;
+}
+
+.None .Checkmark {
+  background-color: #f9fbff;
+}

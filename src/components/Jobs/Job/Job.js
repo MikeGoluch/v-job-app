@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Job.module.css";
 import Button from "../../UI/Button/Button";
 
-const job = (props) => {
+const Job = (props) => {
+  const [isShown, setIsShown] = useState(false);
   return (
-    <div className={classes.Job}>
+    <div
+      className={classes.Job}
+      onMouseEnter={() => setIsShown(true)}
+      onMouseLeave={() => setIsShown(false)}
+    >
       <p>{props.job}</p>
-      <Button>Apply</Button>
+      {isShown && <Button>Apply</Button>}
+      {/* <Button>Apply</Button> */}
     </div>
   );
 };
 
-export default job;
+export default Job;

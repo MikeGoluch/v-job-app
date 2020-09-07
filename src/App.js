@@ -37,7 +37,8 @@ class App extends Component {
     });
     const occurrences = this.countOccurrences(newArr);
     return (
-      <div>
+      <div className={classes.Container}>
+        <h1>Jobs</h1>
         <Checkboxes occurrences={occurrences} data={this.state.data} />
       </div>
     );

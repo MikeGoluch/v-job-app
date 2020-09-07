@@ -8,11 +8,21 @@ const jobs = (props) => {
     const limitedResults = results.slice(start, end);
     return limitedResults;
   };
+  const filterResults = (filtered, results) => {
+    const newResults = results.filter((result) => {
+      return filtered.includes(result.location);
+    });
+    return displayJobResults(newResults, undefined);
+  };
   return (
     <div>
-      {displayJobResults(props.jobs, undefined).map((el) => (
-        <Job key={el.id} job={el.job} />
-      ))}
+      {props.filtered.length > 0
+        ? filterResults(props.filtered, props.jobs).map((el) => (
+            <Job key={el.id} job={el.job} />
+          ))
+        : displayJobResults(props.jobs, undefined).map((el) => (
+            <Job key={el.id} job={el.job} />
+          ))}
     </div>
   );
 };
