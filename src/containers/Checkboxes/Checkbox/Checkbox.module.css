@@ -1,11 +1,9 @@
 .Checkbox {
-  /* display: grid; */
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 20px;
 }
 
 .Container {
-  /* display: inline-block; */
   position: relative;
   cursor: pointer;
   font-size: 16px;

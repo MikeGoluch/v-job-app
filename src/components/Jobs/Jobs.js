@@ -2,7 +2,7 @@ import React from "react";
 import Job from "./Job/Job";
 
 const jobs = (props) => {
-  const displayJobResults = (results, resultsLimit = 30) => {
+  const displayJobResults = (results, resultsLimit = 7) => {
     const start = 0;
     const end = resultsLimit;
     const limitedResults = results.slice(start, end);

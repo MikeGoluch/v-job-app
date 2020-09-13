@@ -12,7 +12,6 @@ const Job = (props) => {
     >
       <p>{props.job}</p>
       {isShown && <Button>Apply</Button>}
-      {/* <Button>Apply</Button> */}
     </div>
   );
 };

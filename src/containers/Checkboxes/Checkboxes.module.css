@@ -3,6 +3,7 @@
   font-weight: bold;
   line-height: 22px;
   margin-bottom: 20px;
+  margin-left: 15px;
 }
 
 .Container h2 {
@@ -10,9 +11,11 @@
   font-weight: bold;
   line-height: 27px;
   margin-bottom: 20px;
+  margin-left: 15px;
 }
 
 .Checkboxes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-left: 15px;
 }

@@ -3,6 +3,9 @@
   justify-content: space-between;
   margin-bottom: 5px;
   height: 64px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 20px;
 }
 
 .Job:hover {
@@ -14,4 +17,10 @@
 
 .Job p {
   margin: auto 0px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .Job:hover {
+    background: #f1f3f7;
+  }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-// import Checkbox from "../../UI/Checkbox/Checkbox";
 import classes from "./Location.module.css";
 
 const location = (props) => {

@@ -19,17 +19,6 @@ class App extends Component {
     }, {});
     return countOccurrences;
   };
-
-  // extractUniqueValues = (array) => {
-  //   let filteredArray = [];
-  //   filteredArray = array.filter((element, index, arr) => {
-  //     return index == arr.indexOf(element);
-  //   });
-  //   const occurrences = this.countOccurrences(array)
-  //   return filteredArray.map(el => {
-
-  //   });
-  // };
   render() {
     const newArr = [];
     this.state.data.map((el) => {
@@ -37,9 +26,16 @@ class App extends Component {
     });
     const occurrences = this.countOccurrences(newArr);
     return (
-      <div className={classes.Container}>
-        <h1>Jobs</h1>
-        <Checkboxes occurrences={occurrences} data={this.state.data} />
+      <div>
+        <div className={classes.Last1}>
+          <div className={classes.Last2}>
+            <div className={classes.Background}></div>
+            <div className={classes.Container}>
+              <h1>Jobs</h1>
+              <Checkboxes occurrences={occurrences} data={this.state.data} />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
