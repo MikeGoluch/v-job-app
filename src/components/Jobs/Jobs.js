@@ -1,3 +1,4 @@
+import classes from "./Jobs.module.css";
 import React from "react";
 import Job from "./Job/Job";
 
@@ -15,7 +16,7 @@ const jobs = (props) => {
     return displayJobResults(newResults, undefined);
   };
   return (
-    <div>
+    <div className={classes.Jobs}>
       {props.filtered.length > 0
         ? filterResults(props.filtered, props.jobs).map((el) => (
             <Job key={el.id} job={el.job} />

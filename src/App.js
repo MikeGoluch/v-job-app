@@ -27,13 +27,13 @@ class App extends Component {
     const occurrences = this.countOccurrences(newArr);
     return (
       <div>
-        <div className={classes.Last1}>
-          <div className={classes.Last2}>
-            <div className={classes.Background}></div>
-            <div className={classes.Container}>
-              <h1>Jobs</h1>
-              <Checkboxes occurrences={occurrences} data={this.state.data} />
-            </div>
+        <div className={classes.Container}>
+          <div className={classes.BluePart}></div>
+          <div className={classes.GreyPart}></div>
+          <div className={classes.Background}></div>
+          <div className={classes.Jobs}>
+            <h1>Jobs</h1>
+            <Checkboxes occurrences={occurrences} data={this.state.data} />
           </div>
         </div>
       </div>

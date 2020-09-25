@@ -1,0 +1,16 @@
+.Jobs {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 5px;
+}
+
+@media (max-width: 992px) {
+  .Jobs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 650px) {
+  .Jobs {
+    grid-template-columns: 1fr;
+  }
+}

@@ -12,9 +12,16 @@
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  margin: 11px 0;
+  margin: auto 0;
 }
 
 .Button:hover {
   cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .Button {
+    height: 31px;
+    width: 79px;
+  }
 }

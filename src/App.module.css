@@ -1,21 +1,21 @@
-.Container {
+.Jobs {
+  display: grid;
   z-index: 3;
   position: absolute;
-  width: 1057px;
-  height: 942px;
+  width: 66%;
   background: #ffffff;
-  padding-top: 35px;
-  padding-left: 20px;
-  left: 272px;
-  top: 258px;
+  padding: 35px 20px;
+  left: 17%;
+  top: 22%;
 }
 
-.Container h1 {
+.Jobs h1 {
   font-size: 26px;
   font-weight: bold;
   line-height: 35px;
   margin-bottom: 46px;
   margin-left: 15px;
+  margin-top: 0;
 }
 
 .Checkboxes {
@@ -24,23 +24,44 @@
 }
 
 .Background {
-  width: 1216px;
+  width: 76%;
   height: 647px;
   background: #4671f3;
   z-index: 2;
   position: absolute;
-  left: 192px;
-  top: 391px;
+  left: 12%;
+  top: 32.6%;
 }
 
-.Last1 {
-  height: 1200px;
-  background: #f1f3f7;
+.Container {
+  display: grid;
+  grid-template-rows: 767px 433px;
+  position: relative;
+  width: 100vw;
 }
 
-.Last2 {
-  width: 1600px;
-  background-color: #517cfd;
-  height: 767px;
+.GreyPart {
+  background-color: #f1f3f7;
   z-index: 1;
+}
+
+.BluePart {
+  background-color: #517cfd;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .Jobs {
+    top: 25.8%;
+  }
+}
+@media (max-width: 768px) {
+  .Jobs {
+    top: 14.8%;
+  }
+}
+@media (max-width: 650px) {
+  .Jobs {
+    top: 25.8%;
+  }
 }
