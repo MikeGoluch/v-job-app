@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/v-job-app/static/css/main.16f2eb5e.chunk.css",
-    "main.js": "/v-job-app/static/js/main.5be1f0cd.chunk.js",
-    "main.js.map": "/v-job-app/static/js/main.5be1f0cd.chunk.js.map",
+    "main.css": "/v-job-app/static/css/main.cd22b6eb.chunk.css",
+    "main.js": "/v-job-app/static/js/main.3d0c0098.chunk.js",
+    "main.js.map": "/v-job-app/static/js/main.3d0c0098.chunk.js.map",
     "runtime-main.js": "/v-job-app/static/js/runtime-main.6baf5acc.js",
     "runtime-main.js.map": "/v-job-app/static/js/runtime-main.6baf5acc.js.map",
-    "static/js/2.9d99b7f8.chunk.js": "/v-job-app/static/js/2.9d99b7f8.chunk.js",
-    "static/js/2.9d99b7f8.chunk.js.map": "/v-job-app/static/js/2.9d99b7f8.chunk.js.map",
+    "static/js/2.fac4c79c.chunk.js": "/v-job-app/static/js/2.fac4c79c.chunk.js",
+    "static/js/2.fac4c79c.chunk.js.map": "/v-job-app/static/js/2.fac4c79c.chunk.js.map",
     "index.html": "/v-job-app/index.html",
-    "precache-manifest.93b536bccadc376d9695d240c3723182.js": "/v-job-app/precache-manifest.93b536bccadc376d9695d240c3723182.js",
+    "precache-manifest.9574e5a2bfb4c1f1c4d343129e79085f.js": "/v-job-app/precache-manifest.9574e5a2bfb4c1f1c4d343129e79085f.js",
     "service-worker.js": "/v-job-app/service-worker.js",
-    "static/css/main.16f2eb5e.chunk.css.map": "/v-job-app/static/css/main.16f2eb5e.chunk.css.map",
-    "static/js/2.9d99b7f8.chunk.js.LICENSE.txt": "/v-job-app/static/js/2.9d99b7f8.chunk.js.LICENSE.txt"
+    "static/css/main.cd22b6eb.chunk.css.map": "/v-job-app/static/css/main.cd22b6eb.chunk.css.map",
+    "static/js/2.fac4c79c.chunk.js.LICENSE.txt": "/v-job-app/static/js/2.fac4c79c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6baf5acc.js",
-    "static/js/2.9d99b7f8.chunk.js",
-    "static/css/main.16f2eb5e.chunk.css",
-    "static/js/main.5be1f0cd.chunk.js"
+    "static/js/2.fac4c79c.chunk.js",
+    "static/css/main.cd22b6eb.chunk.css",
+    "static/js/main.3d0c0098.chunk.js"
   ]
 }
